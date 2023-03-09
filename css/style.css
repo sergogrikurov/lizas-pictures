@@ -109,7 +109,10 @@ h1 {
 
 .swiper {
   width: 88.5rem;
-  padding: 0rem 0rem 0rem 1.25rem; }
+  padding-left: 0px; }
+  @media (max-width: 1446px) {
+    .swiper {
+      padding-left: calc(20px + -20 * ((100vw - 320px) / 1126)); } }
 
 .lizas__slider2 {
   margin-top: 50px; }

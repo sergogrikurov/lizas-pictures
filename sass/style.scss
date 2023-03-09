@@ -11,7 +11,7 @@ h1 {
 }
 .swiper {
 	width: rem(1416);
-	padding: rem(0) rem(0) rem(0) rem(20);
+	@include adaptive-value("padding-left", 0, 20, 1);
 }
 .lizas__slider2 {
 	@include adaptive-value("margin-top", 50, 30, 1);
