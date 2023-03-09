@@ -2,14 +2,25 @@
 @import "adaptive-value.scss";
 
 /*!!!*dont touch!!!*/
+h1 {
+	@include adaptive-value("font-size", 100, 40, 1);
+	text-align: center;
+	color: green;
+	@include adaptive-value("padding-top", 50, 30, 1);
+	@include adaptive-value("margin-bottom", 50, 30, 1);
+}
 .swiper {
 	width: rem(1416);
-	height: rem(672);
+	padding: rem(0) rem(0) rem(0) rem(20);
 }
-
+.lizas__slider2 {
+	@include adaptive-value("margin-top", 50, 30, 1);
+}
 .slide-div {
 	@include adaptive-value("width", 1416, 280, 1);
-	@include adaptive-value("height", 672, 500, 1);
+	border: 3px solid red;
+	border-radius: rem(5);
+	overflow: hidden;
 	img {
 		width: 100%;
 	}
