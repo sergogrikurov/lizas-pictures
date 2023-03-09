@@ -1,0 +1,16 @@
+@import "nullstyle.scss";
+@import "adaptive-value.scss";
+
+/*!!!*dont touch!!!*/
+.swiper {
+	width: rem(1416);
+	height: rem(672);
+}
+
+.slide-div {
+	@include adaptive-value("width", 1416, 280, 1);
+	@include adaptive-value("height", 672, 500, 1);
+	img {
+		width: 100%;
+	}
+}
